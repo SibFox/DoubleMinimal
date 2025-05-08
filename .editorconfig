@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# CS0219: Переменная назначена, но ее значение не используется
+dotnet_diagnostic.CS0219.severity = none
+
+# CS8321: Локальная функция объявлена, но не используется
+dotnet_diagnostic.CS8321.severity = none
+
+# IDE0059: Ненужное присваивание значения
+dotnet_diagnostic.IDE0059.severity = none
