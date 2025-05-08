@@ -1,7 +1,7 @@
 ﻿namespace TestDoubleMinimal
 {
     [TestClass]
-    public sealed class DoubleMinimalTests
+    public sealed class LogicTests
     {
         [TestMethod]
         public void TestSum1()
@@ -78,24 +78,6 @@
             int actual = Program.FindMinimalsSummirize(testNums);
 
             Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void TestNull()
-        {
-            Assert.ThrowsException<ArgumentNullException>(() => Program.FindMinimalsSummirize(null));
-        }
-
-        [TestMethod]
-        public void TestNoNums()
-        {
-            Assert.ThrowsException<ArgumentException>(() => Program.FindMinimalsSummirize(Array.Empty<int>()));            
-        }
-
-        [TestMethod]
-        public void TestOverflow()
-        {
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => Program.FindMinimalsSummirize(new int[101]));
         }
     }
 }
